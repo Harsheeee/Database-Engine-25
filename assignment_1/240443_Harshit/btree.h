@@ -17,11 +17,8 @@ typedef struct {
     int rear;
 } Queue;
 
-// Creation and utility
 BtreeNode* create_node(bool is_leaf);
 void print(BtreeNode* root);
-
-// Core operations
 void insert(BtreeNode** root, int key, char* value);
 char* search(BtreeNode* root, int key);
 void deletion(BtreeNode** root, int key);
